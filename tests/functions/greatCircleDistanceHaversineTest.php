@@ -1,0 +1,22 @@
+<?php
+
+declare(strict_types=1);
+
+use PHPUnit\Framework\TestCase;
+
+final class greatCircleDistanceHaversineTest extends TestCase
+{
+    public function testReturnsExpectedValue() : void
+    {
+        $this->assertEquals(
+            greatCircleDistanceHaversine(
+                43.64256,
+                -79.38714,
+                43.64157,
+                -79.38917,
+                WGS84_EQUATORIAL_RADIUS_METRES
+            ),
+            197.20148225013557
+        );
+    }
+}
