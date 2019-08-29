@@ -15,7 +15,7 @@ composer run tests;
 
 Finish implementing tests.
 
-## Other Resources
+## Resources
 
 * https://github.com/proj4js/mgrs
 * https://github.com/dvdoug/PHPCoord
