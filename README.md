@@ -5,12 +5,10 @@ A repo for commonly used geo functions in php.
 ## Run Tests
 
 ```bash
-git clone <...>
+git clone <...>;
+cd geophp;
 composer install;
-cd geo-fns;
-clear; ./vendor/bin/phpunit --testdox;
-
-clear; ./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox tests;
+composer run tests;
 ```
 
 ## Todos
