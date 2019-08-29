@@ -1,6 +1,6 @@
 # geophp
 
-A repo for commonly used geo functions in php.
+Store geo related functions in php.
 
 ## Run Tests
 
