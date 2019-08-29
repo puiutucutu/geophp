@@ -6,6 +6,7 @@ $iterator = new RecursiveIteratorIterator(
     new RecursiveDirectoryIterator(__DIR__),
     RecursiveIteratorIterator::SELF_FIRST
 );
+
 /**
  * @var $file \SplFileInfo
  */
