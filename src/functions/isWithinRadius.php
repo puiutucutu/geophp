@@ -16,7 +16,7 @@
  *
  * @return bool
  */
-function isCoordinateWithinRadius(
+function isWithinRadius(
     $distanceLimit,
     $circleMidpointLatitude,
     $circleMidpointLongitude,

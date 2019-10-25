@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-final class isUtmCoordinateWithinCircleTest extends TestCase
+final class isWithinRadiusUtmTest extends TestCase
 {
     private $coordinates = [
         [
@@ -20,7 +20,7 @@ final class isUtmCoordinateWithinCircleTest extends TestCase
     public function testReturnsTrueWhenCoordinateIsInsideCircle():void
     {
         $this->assertEquals(
-            isUtmCoordinateWithinCircle(
+            isWithinRadiusUtm(
                 197.0000000001,
                 $this->coordinates[0]["easting"],
                 $this->coordinates[0]["northing"],
@@ -33,7 +33,7 @@ final class isUtmCoordinateWithinCircleTest extends TestCase
     public function testReturnsTrueWhenCoordinateIsOnCircumference() : void
     {
         $this->assertEquals(
-            isUtmCoordinateWithinCircle(
+            isWithinRadiusUtm(
                 196.6977376586,
                 $this->coordinates[0]["easting"],
                 $this->coordinates[0]["northing"],
@@ -46,7 +46,7 @@ final class isUtmCoordinateWithinCircleTest extends TestCase
     public function testReturnsFalseWhenCoordinateIsOutsideCircle() : void
     {
         $this->assertEquals(
-            isUtmCoordinateWithinCircle(
+            isWithinRadiusUtm(
                 196.6977376585,
                 $this->coordinates[0]["easting"],
                 $this->coordinates[0]["northing"],

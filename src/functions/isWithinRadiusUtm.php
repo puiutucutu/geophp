@@ -3,6 +3,7 @@
 /**
  * Determines whether a coordinate pair is within the radius of a circle
  * using the utm coordinate system.
+ *
  * Distances will be compared up to ten significant figures.
  *
  * @param float $distanceLimit    The maximum allowed distance that the target
@@ -15,7 +16,7 @@
  *
  * @return bool
  */
-function isUtmCoordinateWithinCircle(
+function isWithinRadiusUtm(
     $distanceLimit,
     $pointOneEasting,
     $pointOneNorthing,

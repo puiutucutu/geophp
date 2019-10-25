@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-final class isCoordinateWithinRadiusTest extends TestCase
+final class isWithinRadiusTest extends TestCase
 {
     private $coordinates = [
         ["latitude" => 43.64256, "longitude" => -79.38714],
@@ -14,7 +14,7 @@ final class isCoordinateWithinRadiusTest extends TestCase
     public function testReturnsTrueWhenCoordinateIsInsideCircle():void
     {
         $this->assertEquals(
-            isCoordinateWithinRadius(
+            isWithinRadius(
                 197.20148225015,
                 $this->coordinates[0]["latitude"],
                 $this->coordinates[0]["longitude"],
@@ -27,7 +27,7 @@ final class isCoordinateWithinRadiusTest extends TestCase
     public function testReturnsTrueWhenCoordinateIsOnCircumference() : void
     {
         $this->assertEquals(
-            isCoordinateWithinRadius(
+            isWithinRadius(
                 197.20148225014,
                 $this->coordinates[0]["latitude"],
                 $this->coordinates[0]["longitude"],
@@ -40,7 +40,7 @@ final class isCoordinateWithinRadiusTest extends TestCase
     public function testReturnsFalseWhenCoordinateIsOutsideCircle() : void
     {
         $this->assertEquals(
-            isCoordinateWithinRadius(
+            isWithinRadius(
                 197.20148225013,
                 $this->coordinates[0]["latitude"],
                 $this->coordinates[0]["longitude"],

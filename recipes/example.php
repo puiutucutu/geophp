@@ -110,7 +110,7 @@ $radiusInMetres = 100;
 $pointsOfInterestWithinRadiusOfCNTower = [];
 foreach ($pointsOfInterest as $poiName => $poi)
 {
-    $isWithinRadius = isUtmCoordinateWithinCircle(
+    $isWithinRadius = isWithinRadiusUtm(
         $radiusInMetres,
         $CNTower["utm"]["easting"],
         $CNTower["utm"]["northing"],
